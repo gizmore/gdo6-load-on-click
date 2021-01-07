@@ -1,0 +1,4 @@
+#gdt-loading-pane span {
+	background-image: url(ajax-loader.gif);
+	background-size: contain;
+}
