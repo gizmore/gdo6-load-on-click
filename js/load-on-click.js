@@ -4,6 +4,9 @@ function loadOnClick() {
 	if (this.href && this.href.toLowerCase().startsWith('javascript')) {
 		return; // not a page load.
 	}
+	if (this.classList.contains('gdt-like-button')) {
+		return; // Special like button. @TODO ugly cross reference
+	}
 	var loadingPane = window.document.getElementById('gdt-loading-pane');
 	loadingPane.classList.remove('done');
 	return true; // for submit
