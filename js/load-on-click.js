@@ -7,6 +7,9 @@ function loadOnClick() {
 	if (this.classList.contains('gdt-like-button')) {
 		return; // Special like button. @TODO ugly cross reference
 	}
+	if (this.classList.contains('tbscode_standard_link')) {
+		return; // TBSBBCode @TODO ugly cross reference
+	}
 	var loadingPane = window.document.getElementById('gdt-loading-pane');
 	loadingPane.classList.remove('done');
 	return true; // for submit
