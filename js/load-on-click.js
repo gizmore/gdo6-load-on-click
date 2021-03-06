@@ -7,6 +7,9 @@ function loadOnClick() {
 	if (this.target==='_blank') {
 		return; // Opened in new tab.
 	}
+	if (this.classList.contains('gdt-download-button')) {
+		return; // download buttons don't refresh the page
+	}
 	if (this.classList.contains('gdt-like-button')) {
 		return; // Special like button. @TODO ugly cross reference
 	}
