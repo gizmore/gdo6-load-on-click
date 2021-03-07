@@ -18,6 +18,7 @@ function loadOnClick() {
 	}
 	var loadingPane = window.document.getElementById('gdt-loading-pane');
 	loadingPane.classList.remove('done');
+	
 	return true; // for submit
 }
 
