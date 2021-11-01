@@ -14,7 +14,7 @@ final class Module_LoadOnClick extends GDO_Module
 {
     public function onIncludeScripts()
     {
-        $this->addJavascript('js/load-on-click.js');
+        $this->addJS('js/load-on-click.js');
         $this->addCSS('css/gdo6-load-on-click.css');
     }
     
